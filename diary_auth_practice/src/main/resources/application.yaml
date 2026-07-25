@@ -17,12 +17,11 @@ spring:
       ddl-auto: update
     show-sql: true
 
-
-security:
+  security:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_gsDUGG9pg # SSO -> Single Sign ON
+          issuer-uri: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_gsDUGG9pg
 
 server:
   port: 8989

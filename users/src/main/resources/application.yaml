@@ -20,11 +20,11 @@ spring:
   # Resource Server: valida el JWT que emite Cognito.
   # El issuer-uri apunta al User Pool; Spring descarga las llaves publicas (JWKS)
   # desde ese issuer y verifica la firma de cada token automaticamente.
-security:
+  security:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_gsDUGG9pg # SSO -> Single Sign ON
+          issuer-uri: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_gsDUGG9pg
 
 server:
   port: 8686
